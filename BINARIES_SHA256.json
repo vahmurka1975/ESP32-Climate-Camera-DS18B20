@@ -1,0 +1,22 @@
+{
+  "ClimateCamera_2.1.0_DS18B20.app.bin": {
+    "bytes": 902736,
+    "sha256": "628b1c9688519c918337b648df33de0b676a7a39de994bbac9537e73aa8dd593"
+  },
+  "ClimateCamera_2.1.0_DS18B20.full.bin": {
+    "bytes": 968272,
+    "sha256": "86b5758e3ed72031f1d2680a1e0e7fb666a820e53ef5f7800b717cb13da1eff2"
+  },
+  "boot_app0.bin": {
+    "bytes": 8192,
+    "sha256": "f94c5d786a7a8fab06ac5d10e33bf37711a6697636dc037559ea19cc410a17f0"
+  },
+  "bootloader.bin": {
+    "bytes": 17536,
+    "sha256": "3d234a7471f67b013686dabd4dee7c1fa915c9928463616a94bc9297acf1abf8"
+  },
+  "partitions.bin": {
+    "bytes": 3072,
+    "sha256": "0a8b5720e7b77ff11f1462458c3a509dee79224e5279898f26d6a2e3ae0517b7"
+  }
+}

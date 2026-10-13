@@ -1,0 +1,72 @@
+ESP32 Climate Camera DS18B20 Psychrometer v2.1.0
+Base: ESP32-2-4TFT-WiFI-Climate-Camera main / v2.0.0
+Board: esp32dev (classic ESP32, 4 MB)
+Platform: espressif32 6.8.1 / Arduino ESP32 2.0.17
+Display: ILI9341 240x320, CS GPIO19, SPI 27 MHz
+Partitions: min_spiffs.csv (two OTA application slots)
+DS18B20: GPIO21 dry; GPIO22 wet; independent externally powered 1-Wire buses
+ESP32 compilation: SUCCESS
+Host tests: PASS
+ESP32 image_info: PASS
+Hardware validation: NOT PERFORMED
+
+PASS: psychrometric formula, range checks, CRC, external power, fixed roles, retry, conversion timing, millis wrap
+Reference RH at 12/10 C: 77.907 %
+
+esptool.py v4.5.1
+Image version: 1
+Entry point: 40083180
+5 segments
+
+Segment 1: len 0x25260 load 0x3f400020 file_offs 0x00000018 [DROM]
+Segment 2: len 0x06080 load 0x3ffbdb60 file_offs 0x00025280 [BYTE_ACCESSIBLE,DRAM]
+Segment 3: len 0x04d08 load 0x40080000 file_offs 0x0002b308 [IRAM]
+Segment 4: len 0x9df60 load 0x400d0020 file_offs 0x00030018 [IROM]
+Segment 5: len 0x0e69c load 0x40084d08 file_offs 0x000cdf80 [IRAM]
+Checksum: 1e (valid)
+Validation Hash: d2a31cf7acda85354ef9c92333095a89fb3ba1b9caacf78c03f8fe0efb182cae (valid)
+
+Build tail:
+ev/FrameworkArduino/esp32-hal-adc.c.o
+Compiling .pio/build/esp32dev/FrameworkArduino/esp32-hal-bt.c.o
+Compiling .pio/build/esp32dev/FrameworkArduino/esp32-hal-cpu.c.o
+Compiling .pio/build/esp32dev/FrameworkArduino/esp32-hal-dac.c.o
+Compiling .pio/build/esp32dev/FrameworkArduino/esp32-hal-gpio.c.o
+Compiling .pio/build/esp32dev/FrameworkArduino/esp32-hal-i2c-slave.c.o
+Compiling .pio/build/esp32dev/FrameworkArduino/esp32-hal-i2c.c.o
+Compiling .pio/build/esp32dev/FrameworkArduino/esp32-hal-ledc.c.o
+Compiling .pio/build/esp32dev/FrameworkArduino/esp32-hal-matrix.c.o
+Compiling .pio/build/esp32dev/FrameworkArduino/esp32-hal-misc.c.o
+Compiling .pio/build/esp32dev/FrameworkArduino/esp32-hal-psram.c.o
+Compiling .pio/build/esp32dev/FrameworkArduino/esp32-hal-rgb-led.c.o
+Compiling .pio/build/esp32dev/FrameworkArduino/esp32-hal-rmt.c.o
+Compiling .pio/build/esp32dev/FrameworkArduino/esp32-hal-sigmadelta.c.o
+Compiling .pio/build/esp32dev/FrameworkArduino/esp32-hal-spi.c.o
+Compiling .pio/build/esp32dev/FrameworkArduino/esp32-hal-time.c.o
+Compiling .pio/build/esp32dev/FrameworkArduino/esp32-hal-timer.c.o
+Compiling .pio/build/esp32dev/FrameworkArduino/esp32-hal-tinyusb.c.o
+Compiling .pio/build/esp32dev/FrameworkArduino/esp32-hal-touch.c.o
+Compiling .pio/build/esp32dev/FrameworkArduino/esp32-hal-uart.c.o
+Compiling .pio/build/esp32dev/FrameworkArduino/firmware_msc_fat.c.o
+Compiling .pio/build/esp32dev/FrameworkArduino/libb64/cdecode.c.o
+Compiling .pio/build/esp32dev/FrameworkArduino/libb64/cencode.c.o
+Compiling .pio/build/esp32dev/FrameworkArduino/main.cpp.o
+Compiling .pio/build/esp32dev/FrameworkArduino/stdlib_noniso.c.o
+Compiling .pio/build/esp32dev/FrameworkArduino/wiring_pulse.c.o
+Compiling .pio/build/esp32dev/FrameworkArduino/wiring_shift.c.o
+Archiving .pio/build/esp32dev/libFrameworkArduino.a
+Indexing .pio/build/esp32dev/libFrameworkArduino.a
+Linking .pio/build/esp32dev/firmware.elf
+Retrieving maximum program size .pio/build/esp32dev/firmware.elf
+Checking size .pio/build/esp32dev/firmware.elf
+Advanced Memory Usage is available via "PlatformIO Home > Project Inspect"
+RAM:   [=         ]  14.9% (used 48688 bytes from 327680 bytes)
+Flash: [=====     ]  45.6% (used 896157 bytes from 1966080 bytes)
+Building .pio/build/esp32dev/firmware.bin with action:
+  "$PYTHONEXE" "$OBJCOPY" --chip esp32 elf2image --flash_mode ${__get_board_flash_mode(__env__)} --flash_freq ${__get_board_f_image(__env__)} --flash_size 4MB --elf-sha256-offset 0xb0 -o $TARGET $SOURCES
+Building .pio/build/esp32dev/firmware.bin
+esptool.py v4.5.1
+Creating esp32 image...
+Merged 27 ELF sections
+Successfully created esp32 image.
+========================= [SUCCESS] Took 12.18 seconds =========================
